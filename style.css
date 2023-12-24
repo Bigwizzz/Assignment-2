@@ -1,0 +1,185 @@
+        p{
+            font-size: 20;
+        }
+        .password-input{
+            margin-bottom: 20px;
+
+        }
+        @media only screen and (min-width: 768px) {
+        body{
+            max-height: 95vh;
+
+            display: grid;
+            grid-template-areas: "left right";
+            grid-template-columns: "1fr 3fr";
+        
+        }
+        .left-column {
+    grid-area: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    margin: 0 10% 0% 10%;
+    padding-left: 25%;
+    }
+
+
+    .right-column {
+    grid-area: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack children in a column */
+    align-items: center;
+    padding-top: 50px;
+}
+
+.form-div {
+    margin-top: 20px; /* Add space between the button and the form */
+    /* text-align: center; Center text within the form-div */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Add space between input groups */
+    display: inline-block;
+    margin-left: 5px;
+    width: 40% ;
+}
+
+label {
+    margin-bottom: 5px; /* Add space between label and input */
+    font-weight: bold;
+}
+.shadowed-div {
+    width: 70%;
+            margin: auto;
+            border-radius: 1%;
+
+            padding: 5% 0 5% 10%;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            }
+
+input {
+    width: 100%; /* Make the input take full width */
+    padding: 8px; /* Add some padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+}
+
+        .btn-div input[type="button"] {
+            width: 82%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #2EC4B6;
+            color: #ffffff; /* Set text color to make it readable on the background */
+            border: none;
+            cursor: pointer;
+        }
+ 
+#input-btn:focus{
+    border: 2px solid #2EC4B6;  
+    /* border: 2px solid #2EC4B6; */
+    outline: none; /* Optionally remove the default outline */
+
+}
+#input-btn.full{
+    width: 82%;
+}
+#mobile{
+    display: none;
+}
+        }
+
+        @media only screen and (max-width: 768px) {
+            #desktop{
+                display: none;
+            }
+            #mobile{
+                width: 316px;
+                text-align: center;
+                align-items: center;
+                padding: 5% 15% 5% 15%;
+            }
+            body {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            img {
+                width: 100px;
+            }
+            .image-div {
+                margin-bottom: 0;
+                padding: 5% 0 0 10%;
+            }
+            .text-div {
+                width: 70%;
+                padding: 0% 0 5% 10%;
+            }
+            .shadowed-div {
+                width: 327px;
+                margin: auto;
+                border-radius: 1%;
+                padding: 5% 0 5% 10%;
+                background-color: #ffffff;
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+                align-items: center;
+            }
+            #input-btn:focus {
+                border: 2px solid #2EC4B6;
+                outline: none;
+            }
+            #input-btn{
+                width: 82%;
+            }
+            label {
+                display: block;
+                margin: 10px;
+            }
+            input{
+                padding: 10px;
+            }
+            #input-btn.select{
+                width: 90%;
+                margin: 0;
+                padding: 10px;
+            }
+            .input-group {
+                width: 100%;
+                margin-bottom: 15px; /* Add space between input groups */
+            }
+            .btn-div input[type="button"] {
+                width: 90%;
+                background-color: #2EC4B6;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+            }
+            select {
+                width: 100%;
+                padding: 8px;
+            }
+            
+        }
+        .terms-div {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333; /* Default text color */
+        }
+
+        .terms-link {
+            color: #2EC4B6; /* Link color */
+            text-decoration: none;
+            transition: text-decoration 0.3s;
+        }
+
+        .terms-link:hover {
+            text-decoration: underline;
+        }
+    
